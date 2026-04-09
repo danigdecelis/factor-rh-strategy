@@ -204,7 +204,11 @@
     .faq-a { font-size: 15px; color: var(--body-text); line-height: 1.7; }
 
     .about-card { background: var(--off-white); border-radius: 10px; padding: 40px; display: flex; gap: 32px; align-items: flex-start; }
-    .evan-photo { width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0; border: 2px solid var(--gold); object-fit: cover; }
+    .evan-photo { width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0; border: 2px solid var(--gold); object-fit: cover; object-position: center 5%; }
+    .daniel-photo-large { width: 100%; max-width: 340px; border-radius: 16px; object-fit: cover; object-position: center 0%; aspect-ratio: 3/4; flex-shrink: 0; border: 1px solid var(--gold-border); }
+    .auditoria-inner { display: flex; gap: 56px; align-items: flex-start; }
+    .auditoria-inner .two-col { flex: 1; min-width: 0; }
+    @media (max-width: 768px) { .auditoria-inner { flex-direction: column-reverse; } .daniel-photo-large { max-width: 100%; } }
     .about-name { font-size: 20px; font-weight: 700; color: var(--dark-mid); margin-bottom: 2px; }
     .about-title { font-size: 14px; color: var(--gold); font-weight: 600; margin-bottom: 4px; }
     .about-links { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
@@ -272,6 +276,8 @@
   <div class="inner">
     <span class="section-label">La Auditoria</span>
     <h2 class="on-light" style="margin-bottom:40px;">Hola Maria Jose, mi nombre es Daniel</h2>
+    <div class="auditoria-inner">
+    <img src="daniel-photo.png" class="daniel-photo-large" alt="Daniel">
     <div class="two-col">
       <div>
         <p class="who-label">Quienes Somos</p>
@@ -281,6 +287,7 @@
         <p class="who-label">Como Te Encontramos</p>
         <p class="who-body">Encontre Factor RH en LinkedIn y en tu sitio web. Despues de investigar tu plataforma, tu base de clientes y tu funnel digital actual, encontre algunas cosas que vale la pena compartir.</p>
       </div>
+    </div>
     </div>
   </div>
 </div>
@@ -844,13 +851,13 @@ Si queres ver como funciona, el link esta en la bio.
 <!-- CARD 19: SOBRE EVAN -->
 <div class="card off-white">
   <div class="inner">
-    <span class="section-label">Sobre Evan</span>
+    <span class="section-label">Sobre Daniel</span>
     <div class="about-card">
-      <img src="https://leadlinker.io/assets/evan-escauriza-CaqATy2y.jpg" class="evan-photo" alt="Evan Escauriza">
+      <img src="daniel-photo.png" class="evan-photo" alt="Daniel">
       <div>
-        <div class="about-name">Evan Escauriza</div>
+        <div class="about-name">Daniel De Celis</div>
         <div class="about-title">Fundador, LeadLinker</div>
-        <div class="about-links"><a href="mailto:evan@leadlinker.io">evan@leadlinker.io</a> &nbsp;&middot;&nbsp; <a href="https://leadlinker.io" target="_blank">leadlinker.io</a></div>
+        <div class="about-links"><a href="mailto:danigdecelis@gmail.com">danigdecelis@gmail.com</a> &nbsp;&middot;&nbsp; <a href="https://leadlinker.io" target="_blank">leadlinker.io</a></div>
         <p class="about-bio">Generacion de Pipeline B2B Hecho Para Vos. Construimos y operamos sistemas de revenue completos que generan conversaciones de ventas calificadas para empresas de alto ticket, combinando prospeccion outbound, infraestructura de captura de leads, autoridad de contenido y secuencias de nutricion automatizadas.</p>
       </div>
     </div>
